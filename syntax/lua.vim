@@ -2,7 +2,7 @@
 " Language: Lua
 
 if exists("b:current_syntax")
-    finish
+  finish
 endif
 
 lua vim.treesitter.stop()
@@ -118,5 +118,7 @@ hi def link luaErrHand        Exception
 
 let b:current_syntax = "lua"
 if main_syntax == 'lua'
-    unlet main_syntax
+  unlet main_syntax
 endif
+
+" vim: sw=2 ts=2 et
